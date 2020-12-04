@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "752763580368",
+    "firebase_url": "https://codetestthree.firebaseio.com",
+    "project_id": "codetestthree",
+    "storage_bucket": "codetestthree.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752763580368:android:89c787159c63e112a293d5",
+        "android_client_info": {
+          "package_name": "coder.mtk.text_3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752763580368-1giu0ni7jvj8etqgrlvb2nuvsmpdof1a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtHg5PAZ5LaadbrP0RSz6wXf58KsYmQOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752763580368-1giu0ni7jvj8etqgrlvb2nuvsmpdof1a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

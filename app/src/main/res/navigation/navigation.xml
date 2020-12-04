@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="coder.mtk.text_3.ui.ItemListFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" >
+        <action
+            android:id="@+id/action_itemListFragment_to_insertFragment"
+            app:destination="@id/insertFragment" />
+        <action
+            android:id="@+id/action_itemListFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertFragment"
+        android:name="coder.mtk.text_3.ui.InsertFragment"
+        android:label="fragment_insert"
+        tools:layout="@layout/fragment_insert" >
+        <action
+            android:id="@+id/action_insertFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="coder.mtk.text_3.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_createAccountFragment"
+            app:destination="@id/createAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createAccountFragment"
+        android:name="coder.mtk.text_3.ui.CreateAccountFragment"
+        android:label="fragment_create_account"
+        tools:layout="@layout/fragment_create_account" >
+        <action
+            android:id="@+id/action_createAccountFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="coder.mtk.text_3.ui.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_editFragment_to_itemListFragment"
+            app:destination="@id/itemListFragment" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="integer" />
+        <argument
+            android:name="qty"
+            app:argType="integer" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+        <argument
+            android:name="index"
+            app:argType="integer" />
+    </fragment>
+</navigation>
